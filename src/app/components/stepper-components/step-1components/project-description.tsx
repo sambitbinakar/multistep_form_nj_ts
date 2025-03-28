@@ -10,12 +10,12 @@ export default function ProjectDescription(){
 
     return(
         <div className="mb-5 mt-4">
-            <Label htmlFor="projectdesc" className="text-gray-600">Project description</Label>
+            <Label htmlFor="projectdesc" className="text-gray-600 mb-3">Project description</Label>
             <Textarea value={description} id="projectdesc" placeholder="Enter a description for the project " onChange={(e)=>setdescription(e.target.value)}/>
             <div className="flex justify-between mt-1">
                 <div className="text-red-500 text-sm flex items-center gap-2">
-                    <MdError />
-                    <span>Error</span>
+                    {/* <MdError />
+                    <span>Error</span> */}
                 </div>
                 <div className="text-sm text-gray-500 mt-2">{description.length}/{maxlength}Characters</div>
             </div>

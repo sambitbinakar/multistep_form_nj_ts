@@ -49,8 +49,8 @@ export function Projectcategory(){
     return (
         <div className="">
             <Label className="text-gray-700 mb-5">Project category</Label>
-            <Select value={selectedcategory} onValueChange={onValueCahnge}>
-                <SelectTrigger className="p-5">
+            <Select value={selectedcategory} onValueChange={onValueCahnge} > 
+                <SelectTrigger className="p-5 w-full">
                     <SelectValue placeholder="Select a category" />
                 </SelectTrigger>
                 <SelectContent>
